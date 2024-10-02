@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1727610196 source:c:\projects\bankloanservice\main.c
+	<stdio.h>
+	<stdlib.h>
+
