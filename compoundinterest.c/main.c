@@ -1,4 +1,5 @@
-
+//KINYUA MIKE MORETI
+//26\09\2024
 // variables and data types
 // preprocessor directive -scanf(),printf()
 #include <stdio.h>
