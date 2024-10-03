@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 //programme to check if user is eligible for bank loan services
+//KINYUA MIKE MORETI
+//26\09\2024
 int main()
 {
 //userprompt variables
 int userAge,userContact;
 char userName,userResidence;
 float userIncome;
-
 //ask for user info
     printf("What is your name?\n");
     scanf("%s",&userName);
@@ -19,9 +20,9 @@ float userIncome;
     scanf("%s",&userResidence);
     printf("What is your annual income?\n");
     scanf("%f",&userIncome);
-
 //check if user`s age reaches the required age using if statement
     if(userAge>=21 && userIncome>=21000)
+//printing the output
         printf("Congratulations you qualify for a loan.\n");
     else
         printf("Unfortunately,we are unable to offer you a loan at this time.\n");
