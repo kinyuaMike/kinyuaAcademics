@@ -1,4 +1,5 @@
-
+//programme author : KINYUA MIKE MORETI
+//date : 28\09\2024
 // variables and data types
 // preprocessor directive -scanf(),printf()
 #include <stdio.h>
