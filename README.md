@@ -1,2 +1,1 @@
-"# kunyuaAcademics" 
-"# kunyuaAcademics" 
+"# kinyuaAcademics
