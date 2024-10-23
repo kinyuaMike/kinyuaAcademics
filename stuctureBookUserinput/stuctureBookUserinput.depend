@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1729638616 source:c:\projects\schoolprojects\stucturebookuserinput\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
