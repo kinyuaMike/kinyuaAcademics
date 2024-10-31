@@ -1,0 +1,5 @@
+Name: mike, Marks: 90
+Name: moreti, Marks: 94
+Name: melvin, Marks: 84
+Name: bonnie, Marks: 94
+Name: mufasa, Marks: 84
