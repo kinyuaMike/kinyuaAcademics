@@ -22,27 +22,27 @@ int main()
     FILE *file = fopen("students.bin", "wb");
     if (file == NULL)
     {
-        printf("File not found!\n");
+        printf("Could not open file.\n");
         return 1;
     }
 
     for (int i = 0; i < n; i++)
     {
-        printf("Enter name of student %d: ", i + 1);
+        printf("Enter the name of the student %d: ", i + 1);
         scanf("%s", students[i].name);
-        printf("Enter marks of student %d: ", i + 1);
+        printf("Enter the marks of the student %d: ", i + 1);
         scanf("%d", &students[i].marks);
     }
 
     fwrite(students, sizeof(struct Student), n, file);
     fclose(file);
-    printf("Data written to binary file successfully.\n");
+    printf("The data has been saved successfully.\n");
 
     struct Student read_students[n];
     file = fopen("students.bin", "rb");
     if (file == NULL)
     {
-        printf("File not found!\n");
+        printf("Could not open file.\n");
         return 1;
     }
 
