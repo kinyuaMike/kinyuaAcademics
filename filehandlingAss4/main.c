@@ -15,17 +15,17 @@ void writeSentence()
 
     if (file == NULL)
     {
-        perror("Error opening file for writing");
+        perror("Could not open file.");
         return;
     }
 
-    printf("Enter a sentence (up to 100 characters): ");
+    printf("Enter a sentence of up to 100 characters : ");
     fgets(sentence, MAX_LENGTH, stdin);
 
     fprintf(file, "%s", sentence);
     fclose(file);
 
-    printf("Sentence written to %s successfully.\n", FILE_NAME);
+    printf("The sentence has been written to file %s successfully.\n", FILE_NAME);
 }
 
 void readContent()
@@ -35,11 +35,11 @@ void readContent()
 
     if (file == NULL)
     {
-        perror("Error opening file for reading");
+        perror("Could not open file.");
         return;
     }
 
-    printf("\nContent of %s:\n", FILE_NAME);
+    printf("\nContents of %s:\n", FILE_NAME);
     while (fgets(sentence, MAX_LENGTH, file) != NULL)
     {
         printf("%s", sentence);
@@ -54,17 +54,17 @@ void appendSentence()
 
     if (file == NULL)
     {
-        perror("Error opening file for appending");
+        perror("Could not open file.");
         return;
     }
 
-    printf("Enter another sentence to append (up to 100 characters): ");
+    printf("Enter another sentence of up to 100 characters to attach : ");
     fgets(sentence, MAX_LENGTH, stdin);
 
     fprintf(file, "%s", sentence);
     fclose(file);
 
-    printf("Sentence appended to %s successfully.\n", FILE_NAME);
+    printf("The sentence has been attached to %s successfully.\n", FILE_NAME);
 }
 
 int main()
